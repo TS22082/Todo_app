@@ -11,10 +11,11 @@ List of specifications (specs) for the completed goal. These are declarative sen
 
 ###Required
 
- - [ ] Familiarize myself with javascript/jquery DOM manipulation.
+ - [ x ] Familiarize myself with javascript/jquery DOM manipulation.
  - [ ] Create a Gitbook detailing the project progress taken.
- - [ ] Create/Delete todos.
+ - [ x ] Create/Delete todos.
  - [ ] User Friendly UI.
- - [ ] The artifact produced is properly licensed, preferably with the MIT license.
- - [ ] Mobile first.
+ - [ x ] The artifact produced is properly licensed, preferably with the MIT license.
+ - [ x ] Mobile first.
+ - [ ] Uploaded to Heroku.
  - [ ] 100% quality.
