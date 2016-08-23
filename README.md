@@ -16,3 +16,5 @@ List of specifications (specs) for the completed goal. These are declarative sen
  - [ ] Create/Delete todos.
  - [ ] User Friendly UI.
  - [ ] The artifact produced is properly licensed, preferably with the MIT license.
+ - [ ] Mobile first.
+ - [ ] 100% quality.
