@@ -25,3 +25,14 @@ List of specifications (specs) for the completed goal. These are declarative sen
  ## Stretched User Story
 
   This will be a shared todo list that will display the users avatar next to the new todo item they posted. The user will be able to mark the todo items as complete and will be able to delete items aswell.
+
+
+## Development
+
+
+#### Setting up the database
+
+```
+createdb todo_app
+psql todo_app < schema.sql
+```
