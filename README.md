@@ -1,9 +1,9 @@
  ###Description
 
-Create a basic todo app that lets the user add and delete todos on a list. The user should have a way of marking a todo as complete and be arranged in a way that is easy to tell which todo is complete or not. 
+Create a basic todo app that lets the user add and delete todos on a list. The user should have a way of marking a todo as complete and be arranged in a way that is easy to tell which todo is complete or not.
 Context
 
-This goal is important in fully understanding DOM manipulation using JavaScript. A gitbook can be used to track programming progress and further additions to the app. 
+This goal is important in fully understanding DOM manipulation using JavaScript. A gitbook can be used to track programming progress and further additions to the app.
 
 ###Specifications
 
@@ -11,12 +11,12 @@ List of specifications (specs) for the completed goal. These are declarative sen
 
 ###Required
 
- - [ x ] Familiarize myself with javascript/jquery DOM manipulation.
+ - [X] Familiarize myself with javascript/jquery DOM manipulation.
  - [ ] Create a Gitbook detailing the project progress taken.
- - [ x ] Create/Delete todos.
- - [  ] User Friendly UI.
- - [ x ] The artifact produced is properly licensed, preferably with the MIT license.
- - [ x ] Mobile first.
+ - [X] Create/Delete todos.
+ - [ ] User Friendly UI.
+ - [X] The artifact produced is properly licensed, preferably with the MIT license.
+ - [X] Mobile first.
  - [ ] Uploaded to Heroku.
  - [ ] 100% quality.
 
