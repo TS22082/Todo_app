@@ -2,8 +2,6 @@ var pgp = require('pg-promise')();
 var connection = `postgres://${process.env.USER}@localhost:5432/lg_todo`
 var db = pgp(connection);
 
-
-
 module.exports = {
 
   getAllUsers: function(){
@@ -11,19 +9,17 @@ module.exports = {
       SELECT 
         * 
       FROM 
-        users  
+        todo_list_items  
     `
     return db.any(sql)
   },
-
-
 
   getUserById: function(userId){
     var sql = `
       SELECT 
         * 
       FROM 
-        users
+        todo_list_items
       WHERE
         id=$1
     `
@@ -31,7 +27,7 @@ module.exports = {
     return db.one(sql, variables)
   },
 
-  getTodos: function(){
+  getTodosById: function(){
     var sql = `
       SELECT
         *
@@ -51,8 +47,6 @@ module.exports = {
     var variables = [todoId]
     return db.none(sql, variables)
   }
-
-
 }
 
 

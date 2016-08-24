@@ -1,7 +1,7 @@
 INSERT INTO
   users (id, email, password)
 VALUES
-  (1, 'ts22082@nunya.com', 'dfe-fen'),
+  (1, 'ts22082@nunya.com', 'de-fen'),
   (2, 'lindsay@nunya.com', 'smith')
 ;
 
