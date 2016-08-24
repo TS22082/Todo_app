@@ -6,12 +6,12 @@ VALUES
 ;
 
 INSERT INTO
-  todo_list_items (id, description, completed)
+  todo_list_items (user_id, description, completed)
 VALUES
   (1, '3 apples', false),
   (1, '4 oranges', false),
   (1, '3 tomatoes', false),
   (2, 'pasta', false),
   (2, 'chips', false),
-  (1, 'soul', false),
+  (2, 'soul', false)
 ;
