@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+  head
+    title Todo!
+
+  body
+    h1 Welcome Back #{username}
+
+    h4 Incomplete:
+    ol
+      for todo in incompleteTodos
+        li
+          span= todo.description
+          a(href="/todos/"+todo.id+"/complete") C
+          a(href="/todos/"+todo.id+"/delete") X
+    hr
+    h4 Complete:
+    ol
+      for todo in completeTodos
+        li
+          span= todo.description
+          a(href="/todos/"+todo.id+"/uncomplete") U
