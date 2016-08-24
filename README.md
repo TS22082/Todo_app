@@ -11,15 +11,18 @@ List of specifications (specs) for the completed goal. These are declarative sen
 
 ###Required
 
- - [X] Familiarize myself with javascript/jquery DOM manipulation.
- - [ ] Create a Gitbook detailing the project progress taken.
- - [X] Create/Delete todos.
- - [ ] User Friendly UI.
- - [X] The artifact produced is properly licensed, preferably with the MIT license.
- - [X] Mobile first.
- - [ ] Uploaded to Heroku.
- - [ ] 100% quality.
-
+- [X] Familiarize myself with javascript/jquery DOM manipulation
+- [X] The artifact produced is properly licensed, preferably with the MIT license
+- [X] Mobile first
+- [ ] has 2 static users: Thomas and Lindsay
+- [ ] each user has access to the same, one and only todo list
+- [ ] each user can add todo list items to _the_ list
+- [ ] when a user adds an item to the todo list, their avatar is shown next to it
+- [ ] each user has an avatar (gravatar?)
+- [ ] each user can re-order, complete, and uncomplete any todo list item
+- [ ] todo list items are listed: grouped by completed, order by create_at timestamp ASC.
+- [ ] Deployed and working on Heroku
+- [ ] User Friendly UI
 
 
  ## Stretched User Story
