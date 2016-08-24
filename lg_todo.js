@@ -55,7 +55,6 @@
 
 // Add click event for completing the item
     complete.addEventListener('click', completeItem);
-
     buttons.appendChild(remove);
     buttons.appendChild(complete);
     item.appendChild(buttons);

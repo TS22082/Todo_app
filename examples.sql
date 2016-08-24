@@ -32,7 +32,7 @@ VALUES
 INSERT INTO
   todo_list_items (user_id, rank, description)
 VALUES
-  (1, 10, 'Buy a cow'),
+  
   (1, 20, 'Buy a chicken'),
   (1, 30, 'Buy a horse'),
   (1, 40, 'set them free!'),
