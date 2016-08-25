@@ -4,8 +4,10 @@ html(lang='en')
     title Todo!
     link(type="text/css" rel='stylesheet' href='/reset.css')
     link(type="text/css" rel='stylesheet' href='/lg_todo.css')
+    link(href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet")
     script(src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous")
     script(src="/lg_todo.js")
+
 
   body
 
@@ -28,19 +30,19 @@ html(lang='en')
       for todo in incompleteTodos
         li
           span= todo.description
-          a(href="/todos/"+todo.id+"/complete") C
-          a(href="/todos/"+todo.id+"/delete") X
-    hr
+          a(href="/todos/"+todo.id+"/complete" class="complete")
+ 
+    hr(class="thing")
 
     ul.todos.complete-todos
       for todo in completeTodos
         li
           span= todo.description
-          a(href="/todos/"+todo.id+"/uncomplete") U
-          a(href="/todos/"+todo.id+"/delete") X
+          a(href="/todos/"+todo.id+"/uncomplete" class="uncomplete")
+          a(href="/todos/"+todo.id+"/delete" class="delete")
   footer
-    h1 Handle it
-    p By Thomas W. Smith
+    h1(class = "footerH") Handle it
+    p(class = "footerP") By Thomas W. Smith
 
 
 

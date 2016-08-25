@@ -14,26 +14,14 @@ List of specifications (specs) for the completed goal. These are declarative sen
 - [X] Familiarize myself with javascript/jquery DOM manipulation
 - [X] The artifact produced is properly licensed, preferably with the MIT license
 - [X] Mobile first
-- [ ] has 2 static users: Thomas and Lindsay
-- [ ] each user has access to the same, one and only todo list
-- [ ] each user can add todo list items to _the_ list
+- [X] has 2 static users: Thomas and Lindsay
+- [X] each user has access to the same, one and only todo list
+- [X] each user can add todo list items to _the_ list
 - [ ] when a user adds an item to the todo list, their avatar is shown next to it
-- [ ] each user has an avatar (gravatar?)
-- [ ] each user can re-order, complete, and uncomplete any todo list item
-- [ ] todo list items are listed: grouped by completed, order by create_at timestamp ASC.
+- [X] todo list items are listed: grouped by completed, order by create_at timestamp ASC.
 - [ ] Deployed and working on Heroku
-- [ ] User Friendly UI
+- [X] User Friendly UI
 
-
- ## Stretched User Story
-
-  This will be a shared todo list that will display the users avatar next to the new todo item they posted. The user will be able to mark the todo items as complete and will be able to delete items aswell.
-
-
-## Development
-
-
-#### Setting up the database
 
 ```
 createdb todo_app
