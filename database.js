@@ -27,6 +27,19 @@ module.exports = {
     return db.one(sql, variables)
   },
 
+  createTodo: function(attributes){
+    var sql = `
+      INSERT INTO
+        todo_list_items (description)
+      VALUES
+        ($1)
+    `
+    var variables = [
+      attributes.description,
+    ]
+    return db.none(sql, variables)
+  },
+
   getTodos: function(){
     var sql = `
       SELECT

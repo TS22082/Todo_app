@@ -1,6 +1,7 @@
 var session = require('express-session')
 var express = require('express');
 var basicAuth = require('basic-auth-connect');
+var bodyParser = require('body-parser')
 var database = require('./database');
 
 var app = express(); //newest try
@@ -13,6 +14,8 @@ app.use(basicAuth(function(user, pass){
   if (user === 'Lindsay' && pass === 'william') return true;
   return false
 }));
+
+app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(session({
   secret: 'utopia',
@@ -69,6 +72,19 @@ app.get('/todos/:todoId/uncomplete', function(req, res){
 
 app.get('/todos/:todoId/delete', function(req, res){
   database.deleteTodo(req.params.todoId)
+    .then(()=>{
+      res.redirect('/')
+    })
+    .catch(error => {
+      res.render('error', {
+        error: error
+      })
+    })
+})
+
+app.post('/todos', function(req, res){
+  const description = req.body.description
+  database.createTodo({description: description})
     .then(()=>{
       res.redirect('/')
     })
