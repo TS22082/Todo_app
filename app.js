@@ -3,13 +3,14 @@ var express = require('express');
 var basicAuth = require('basic-auth-connect');
 var database = require('./database');
 
-var app = express()
+var app = express(); //newest try
+app.use(express.static('public')); //newest try
 
 app.set('view engine', 'pug');
 
 app.use(basicAuth(function(user, pass){
-  if (user === 'thomas' && pass === 'thomas') return true;
-  if (user === 'lindsay' && pass === 'lindsay') return true;
+  if (user === 'Thomas' && pass === 'de-fen') return true;
+  if (user === 'Lindsay' && pass === 'william') return true;
   return false
 }));
 

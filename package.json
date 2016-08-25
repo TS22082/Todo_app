@@ -1,6 +1,6 @@
 {
   "name": "todo",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "app to handle grocery lists and general todos",
   "main": "index.js",
   "scripts": {
@@ -16,3 +16,4 @@
     "pug": "^2.0.0-beta5"
   }
 }
+
