@@ -1,10 +1,10 @@
 {
   "name": "todo",
   "version": "0.0.1",
-  "description": "app to handle grocery lists and general todos",
+  "description": "app to handle grocery lists and general todos for lindsay and I",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
