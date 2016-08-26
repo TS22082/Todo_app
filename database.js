@@ -1,5 +1,5 @@
 var pgp = require('pg-promise')();
-var connection = `postgres://${process.env.USER}@localhost:5432/lg_todo`
+var connection = process.env.DATABASE_URL || `postgres://${process.env.USER}@localhost:5432/lg_todo`;
 var db = pgp(connection);
 
 module.exports = {
